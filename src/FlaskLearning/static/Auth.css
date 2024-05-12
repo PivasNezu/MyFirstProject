@@ -1,0 +1,54 @@
+body{
+    text-align: center;
+    margin: 0;
+    background-color: rgb(44, 44, 46);
+    color: rgb(194, 194, 73);
+}
+.inter{
+margin: 0;
+}
+.butt{
+    margin: 0;
+    
+    text-align: center;
+    margin-top: 30px;
+}
+.button{
+    margin: 0;
+    
+    text-align: center;
+
+    padding-right: 115px;
+}
+
+.navbar a{
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 20px;
+    color: rgb(194, 194, 73);;
+}
+.navbar{
+    overflow: hidden;
+    background-color: #333;
+    
+}
+.image{
+    padding-top: 20px;
+    width: 100%;
+}
+li{
+    float: left;
+
+}
+footer{
+    background-color: rgb(57, 57, 59);
+    float: bottom;
+    color: black;
+}
+.pad{
+    padding-top: 400px;
+}
+
