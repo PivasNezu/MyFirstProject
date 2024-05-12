@@ -1,2 +1,2 @@
 # MyFirstProject
- Проект по теме: Знакомство с Flask
+<img src="https://github.com/PivasNezu/MyFirstProject/blob/main/logo.jpg" width="100%"/>
