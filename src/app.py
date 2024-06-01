@@ -95,9 +95,7 @@ def bad_reqeust(e):
 def Unauthorized(e):
    return render_template('401.html'), 401
 
-@app.errorhandler(402)
-def Pay(e):
-   return render_template('402.html'), 402
+
 
 @app.errorhandler(403)
 def AD(e):
