@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scake=1.0">
+    <title>500 Internal Server Error</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Animation400.css')}}">
+</head>
+
+<body>
+    <div style="width: 100%; height: 100%; justify-content: center; align-items: center; margin: auto">
+  <lottie-player
+                 id="firstLottie"
+                 src="{{ url_for('static', filename='data500_2.json') }}"
+                 style="border-color: red; border-style: solid; border-width: 5px"
+  >
+  </lottie-player>
+        <p>
+            Сервер прилег поспать.
+        </p>
+        <a href="/register">
+            Попробуем снова?
+        </a>
+    </div>
+        <script>
+            LottieInteractivity.create({
+                player:'#firstLottie',
+                mode:"cursor",
+                actions: [
+                  {
+                        type: "click",
+                     forceFlag: false
+                 }
+                ]
+            });
+        </script>
+</body>
+</html>

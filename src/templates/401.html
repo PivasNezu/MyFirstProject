@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scake=1.0">
+    <title>401 Unauthorized</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Стили.css')}}">
+</head>
+
+<body>
+    <div class="error">
+        <lottie-player
+            src="{{ url_for('static', filename='data401.json') }}"
+            background="transparent"  speed="1"
+            style="width: 700px; height: 700px; margin: auto;"
+            loop autoplay>
+        </lottie-player>
+        <p>
+            Ой-ой-ой,
+            Произошла ошибка при регистрации!
+        </p>
+        <a href="/register">
+            Вернемся обратно?!
+        </a>
+    </div>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>

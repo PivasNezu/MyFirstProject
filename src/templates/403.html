@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scake=1.0">
+    <title>403 Acces Denied</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Стили.css')}}">
+</head>
+
+<body>
+    <div class="error">
+        <lottie-player
+            src="{{ url_for('static', filename='data403.json') }}"
+            background="transparent"  speed="1"
+            style="width: 700px; height: 700px; margin: auto;"
+            loop autoplay>
+        </lottie-player>
+        <p>
+            Извините, но вам не дозволено смотреть в этот документ!
+        </p>
+        <a href="/">
+            Вернемся обратно?!
+        </a>
+    </div>
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</body>
+</html>

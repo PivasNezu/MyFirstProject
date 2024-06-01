@@ -83,7 +83,47 @@ def logout():
     logout_user()
     return redirect(url_for('index'))
 
+@app.errorhandler(404)
+def page_not_found(e):
+   return render_template('404.html'), 404
+
+@app.errorhandler(400)
+def bad_reqeust(e):
+   return render_template('400.html'), 400
+
+@app.errorhandler(401)
+def Unauthorized(e):
+   return render_template('401.html'), 401
+
+@app.errorhandler(402)
+def Pay(e):
+   return render_template('402.html'), 402
+
+@app.errorhandler(403)
+def AD(e):
+   return render_template('403.html'), 403
+
+@app.errorhandler(405)
+def MNA(e):
+   return render_template('405.html'), 405
+
+@app.errorhandler(500)
+def ISE(e):
+   return render_template('500.html'), 500
+
+@app.errorhandler(501)
+def NI(e):
+   return render_template('501.html'), 501
+
+@app.errorhandler(502)
+def BG(e):
+   return render_template('502.html'), 502
+
+@app.errorhandler(503)
+def SU(e):
+   return render_template('503.html'), 503
+
 if __name__ == '__main__':
     with app.app_context():
         db.create_all()
-    app.run(host="0.0.0.0", port=11000)
+    app.run(host="0.0.0.0")
